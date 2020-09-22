@@ -101,6 +101,15 @@ public class Matt {
 			//Do something if no other cases match
 			break;
 		}
+		
+	}
+	
+	public int modulo(int a, int b) {
+		//Modulo returns the remainder
+		//3 % 2 = 1
+		//5 % 2 = 1
+		return a % b;
+		
 	}
 	
 }
