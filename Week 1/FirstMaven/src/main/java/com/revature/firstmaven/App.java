@@ -1,10 +1,10 @@
-package com.revature.calculatorActivity;
+package com.revature.firstmaven;
 
 import java.util.Scanner;
 
-import com.revature.firstmaven.CalculatorChild;
+import com.revature.firstmaven.Calculator;
 
-public class Driver {
+public class App {
 	public static boolean errorCheck = true;
 	/*
 	 * Using your Calculator implementation
@@ -43,10 +43,10 @@ public class Driver {
 		Scanner scanner = new Scanner(System.in);
 		String userInput = scanner.nextLine();
 		
-		CalculatorChild cc = new CalculatorChild();
+		Calculator cc = new Calculator();
 		
 		int x = cc.parse(userInput.toString());
-		if(Driver.errorCheck == true) {
+		if(App.errorCheck == true) {
 			System.out.println(x);
 		}
 	}
